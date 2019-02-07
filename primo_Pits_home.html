@@ -120,10 +120,12 @@
             .right-column-2 {
                 width: 20em;
                 margin-left: 20em;
-                float: right;
+                float: center;
                 background-color: #FFFFFF;
                 margin-bottom: 0;
             }
+
+            
         }
     </style>
 </head>
@@ -170,7 +172,7 @@
 
     <div class="left-column-2">
             <h2>Our Dogs</h2>
-            
+
             <img src="../Primo-Pits/images/demo_dogs.png" height="375">
         
     </div>
@@ -185,6 +187,26 @@
             </nav>
         </div>
     </div>
+
+        <h2>Contact Us</h2>
+        <p>
+            Please fill out this quick form to send us an email.  Thank you.
+        </p>
+
+        <form id="contact-form" action="contact.php" method="post">
+
+            <label for="name">Your Name</label>
+            <input class="full-width" type="text" name="name">
+
+            <label for="email">Your Email</label>
+            <input class="full-width" type="text" name="email">
+
+            <label for="body">Message</label>
+            <textarea class="full-width" name="body"></textarea>
+
+            <input type="submit" name="send" value="Send">
+
+        </form>
 
 <footer>
     <p><a href="#" style="color:white">Contact Us</a> | <a href="#" style="color:white">Sitemap</a> | 
